@@ -1,0 +1,73 @@
+    mov 180,r0
+
+out r0,p0
+
+mov 580,r1
+
+out r1,p1
+
+mov 35A0,r2
+
+out r2,p2
+
+mov B7A4,r3
+
+out r3,p3
+
+mov  B1A4,r0
+
+out r0,p4
+
+mov F5E6,r1
+
+out r1,p5
+
+mov 3D8C,r2
+
+out r2,p6
+
+mov 3184,r3
+
+out r3,p7
+
+m:
+mov 1,r1
+IN P0,R0
+ROR 1,r0
+OUT R0,P0
+;
+IN P1,R0
+ROR 1,r0
+OUT R0,P1
+;
+IN P2,R0
+ROR 1,r0
+OUT R0,P2
+;
+IN P3,R0
+ROR 1,r0
+OUT R0,P3
+;
+IN P4,R0
+ROR 1,r0
+OUT R0,P4
+;
+IN P5,R0
+ROR 1,r0
+OUT R0,P5
+;
+IN P6,R0
+ROR 1,r0
+OUT R0,P6
+;
+IN P7,R0
+ROR 1,r0
+OUT R0,P7
+;
+system c
+system d
+system 3
+system 4
+system 6
+jnz m
+stop
